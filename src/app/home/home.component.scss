@@ -1,0 +1,178 @@
+    @import "../../styles.scss";
+    .favicon {
+        position: absolute;
+        right: 0;
+        top: 7%;
+        max-width: 17%;
+    }
+    
+    .Rory {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 25%;
+    }
+    
+    .asset {
+        position: absolute;
+        left: 5.5%;
+        top: 15%;
+        max-width: 13%;
+    }
+    
+    .button {
+        position: absolute;
+        left: 5.5%;
+        bottom: 10%;
+    }
+    
+    .content {
+        position: absolute;
+        left: 5.5%;
+        top: 40%;
+    }
+    
+    .rory {
+        background-color: $orang;
+        width: fit-content;
+    }
+    
+    h1 {
+        font-weight: 700;
+    }
+    
+    span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $orang;
+        top: 0;
+        left: 0;
+    }
+    
+    .Speaking {
+        background-color: $orang;
+    }
+    
+    .Speaking:hover {
+        background-color: $lightOrang;
+        border-color: $lightOrang;
+    }
+    
+    .email {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 80%);
+    }
+    
+    @media screen and (max-width: 1250px) {
+        .p1 {
+            font-size: 16px !important;
+        }
+        .p2 {
+            font-size: 12px !important;
+        }
+    }
+    
+    @media screen and (max-width: 992px) {
+        button,
+        input {
+            font-size: 10px;
+        }
+        .content {
+            left: 5.5%;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .content p {
+            font-size: 13px;
+        }
+        span::after {
+            height: 2px;
+        }
+    }
+    
+    @media screen and (max-width: 870px) {
+        .p1 {
+            font-size: 12px !important;
+        }
+        .p2 {
+            font-size: 8px !important;
+        }
+        .favicon {
+            top: 10%;
+        }
+        .asset {
+            top: 20%;
+        }
+        h1 {
+            font-size: 16px;
+        }
+        .content p {
+            font-size: 10px;
+        }
+        span::after {
+            height: 2px;
+        }
+    }
+    
+    @media screen and (max-width:700px) {
+        .button button {
+            font-size: 6px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .p1 {
+            font-size: 8px !important;
+        }
+        .p2 {
+            font-size: 7px !important;
+        }
+        .favicon {
+            top: 15%;
+        }
+        .asset {
+            top: 25%;
+        }
+        h1 {
+            font-size: 16px;
+        }
+        .content p {
+            font-size: 10px;
+        }
+        .p {
+            width: 75%;
+        }
+        span::after {
+            height: 2px;
+        }
+    }
+    
+    @media screen and (max-width: 440px) {
+        .p1 {
+            font-size: 6px !important;
+        }
+        .p2 {
+            font-size: 5px !important;
+        }
+        .favicon {
+            top: 20%;
+        }
+        .asset {
+            top: 30%;
+        }
+        .button button {
+            font-size: 5px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 14px;
+        }
+        .rory {
+            padding: 0 5px !important;
+        }
+    }

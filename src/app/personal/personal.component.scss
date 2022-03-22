@@ -1,0 +1,78 @@
+@import "../../styles.scss";
+span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $orang;
+    top: -10px;
+    left: 0;
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: $orang;
+    color: $light;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.p1::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: $dark;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background: linear-gradient(to left, $lightOrang, $orang);
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .layer {
+    opacity: .3;
+}
+
+.card {
+    min-height: 540px;
+}
+
+.Speaking {
+    background-color: $orang;
+}
+
+.Speaking:hover {
+    background-color: $lightOrang;
+    border-color: $lightOrang;
+}
+
+@media screen and (max-width:1200px) {
+    .card {
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .card {
+        min-height: 520px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card {
+        min-height: 625px;
+    }
+}

@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$font:'Roboto',
+sans-serif;
+$dark:#383637;
+$blue:#47c3d3;
+$orang:#f47b20;
+$lightOrang:#FFA45E;
+$light:#eeeeee;
+$gray:#B7B7B7;
+$red :#BF3427;
+body {
+    font-family: $font;
+    color: $dark;
+    overflow-x: hidden;
+}
+
+:root {
+    scroll-behavior: unset;
+}

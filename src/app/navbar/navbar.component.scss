@@ -1,0 +1,87 @@
+    @import "../../styles.scss";
+    .fa-xmark {
+        top: 50%;
+        right: 10px;
+        transform: translatey(-50%);
+        cursor: pointer;
+    }
+    
+    .fa-xmark:hover {
+        color: $red !important;
+    }
+    
+    .copy:hover {
+        color: $blue !important;
+    }
+    
+    .add {
+        background-color: $dark;
+    }
+    
+    .navbar-toggler :hover {
+        color: $light;
+        transition: color .5s;
+    }
+    
+    .navbar-brand img {
+        width: 30px;
+    }
+    
+    .navbar {
+        background: linear-gradient( -45deg, ( $lightOrang, $orang)92%, $light 8%);
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: $light;
+    }
+    
+    .nav-link {
+        cursor: pointer;
+        transition: color .5s;
+    }
+    
+    .nav-link:hover {
+        color: $blue !important;
+    }
+    
+    .active {
+        color: $blue !important;
+    }
+    
+    @media screen and (max-width: 1060px)and (min-width:992px) {
+        .add,
+        .collapse,
+        .btn {
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width:992px) {
+        .navbar {
+            background: linear-gradient(to left, $lightOrang, $orang);
+        }
+        .add {
+            font-size: 10px;
+        }
+        .btn {
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .add {
+            font-size: 8px;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .add {
+            font-size: 6px;
+        }
+    }
+    
+    @media screen and (max-width:460px) {
+        .add {
+            font-size: 4px;
+        }
+    }

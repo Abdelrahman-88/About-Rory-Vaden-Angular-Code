@@ -1,0 +1,64 @@
+    @import "../../styles.scss";
+    section {
+        background-color: $dark;
+    }
+    
+    .icon {
+        width: 150px;
+    }
+    
+    .nav-link {
+        color: $light;
+        border-bottom: 2px solid transparent;
+        width: fit-content;
+        transition: border-color .5s;
+        cursor: pointer;
+    }
+    
+    .after::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        background-color: $gray;
+        right: -50%;
+        top: 30%;
+    }
+    
+    .active {
+        border-bottom: 2px solid $orang;
+    }
+    
+    .nav-link:hover {
+        border-color: $orang;
+    }
+    
+    .fa-brands {
+        color: $gray;
+        transition: color .5s;
+        cursor: pointer;
+    }
+    
+    .fa-brands:hover {
+        color: $orang;
+    }
+    
+    .rights {
+        border-top: 2px solid $gray;
+        font-size: 12px;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .nav-link {
+            font-size: 12px;
+        }
+        .after::after {
+            top: 20%;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .nav-link {
+            font-size: 7px;
+        }
+    }

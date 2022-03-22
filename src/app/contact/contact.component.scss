@@ -1,0 +1,19 @@
+@import "../../styles.scss";
+span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: $orang;
+    top: -10px;
+    left: 0;
+}
+
+.Speaking {
+    background-color: $orang;
+}
+
+.Speaking:hover {
+    background-color: $lightOrang;
+    border-color: $lightOrang;
+}

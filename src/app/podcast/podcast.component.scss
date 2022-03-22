@@ -1,0 +1,76 @@
+@import "../../styles.scss";
+.list {
+    position: absolute;
+    height: 100%;
+    left: -20px;
+    top: 70px;
+}
+
+.p1::after,
+.p7::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background-color: $orang;
+    top: 5px;
+    left: -20px;
+}
+
+.p2::after,
+.p3::after,
+.p4::after,
+.p5::after,
+.p6::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid $orang;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    top: 5px;
+    left: -20px;
+}
+
+.p1::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 110%;
+    background-color: $orang;
+    top: 16px;
+    left: -15px;
+}
+
+.p2::before,
+.p3::before,
+.p4::before,
+.p5::before,
+.p6::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 118%;
+    background-color: $orang;
+    top: 16px;
+    left: -15px;
+}
+
+.Speaking {
+    background-color: $orang;
+}
+
+.Speaking:hover {
+    background-color: $lightOrang;
+    border-color: $lightOrang;
+}
+
+@media screen and(max-width:685px) {
+    .p1::before {
+        content: "";
+        height: 105%;
+    }
+}

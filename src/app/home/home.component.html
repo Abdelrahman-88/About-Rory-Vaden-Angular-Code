@@ -1,0 +1,29 @@
+<section class="position-relative pt-5 mt-2">
+    <img class="img-fluid" src="assets/imgs/Banner.png" alt="Banner">
+    <img class="favicon" src="assets/imgs/favicon x1.png" alt="favicon">
+    <img class="asset" src="assets/imgs/image-asset.png" alt="asset">
+    <img class="Rory" src="assets/imgs/Rory.png" alt="Rory">
+    <div class="content text-light fw-bold">
+        <h1><span class="position-relative">Become</span> a More Influential Leader</h1>
+        <p class="m-0 p">SEE WHY NEW YORK TIMES BESTSELLING AUTHOR AND HALL OF FAME LEADERSHIP SPEAKER</p>
+        <p class="rory m-0 p-1">RORY VADEN</p>
+        <p class="m-0">IS THE PERFECT CHOICE TO KEYNOTE YOUR NEXT EVENT</p>
+    </div>
+    <div class="button">
+        <button class="btn btn-outline-light rounded-0 me-3 fw-bolder text-uppercase"><i class="fa-solid fa-circle-play me-2"></i>Watch Rory's Video</button>
+        <button class="Speaking btn rounded-0 text-light fw-bolder text-uppercase">Request Speaking information</button>
+
+    </div>
+    <div class="email bg-light shadow px-4 py-2 text-center rounded-2">
+        <div class="px-lg-5">
+            <p class="p1 text-dark fw-bold fs-4 m-0">Get Rory's Influential LeaderVideo Course Free</p>
+            <p class="p2 text-muted fw-bold">when you sign up to receive his blog updates via email. </p>
+        </div>
+        <form class="w-100 input-group" [formGroup]="signUpForm" (ngSubmit)="submitSignUpForm(signUpForm)">
+            <input [ngClass]="{'is-valid': signUpForm.get('email')?.errors==null}" formControlName="email" type="email" class="form-control text-muted border-secondary py-1 rounded-2" id="email" placeholder="Email">
+
+            <button class="Speaking btn text-light fw-bolder ms-2 py-1 rounded-2" type="submit">SIGN UP</button>
+
+        </form>
+    </div>
+</section>

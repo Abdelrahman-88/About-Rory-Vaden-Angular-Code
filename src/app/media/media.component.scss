@@ -1,0 +1,18 @@
+@import "../../styles.scss";
+.owl {
+    padding: 20px;
+}
+
+.btn:hover {
+    background-color: $orang;
+    border-color: $orang;
+}
+
+.Speaking {
+    background-color: $orang;
+}
+
+.Speaking:hover {
+    background-color: $lightOrang;
+    border-color: $lightOrang;
+}
