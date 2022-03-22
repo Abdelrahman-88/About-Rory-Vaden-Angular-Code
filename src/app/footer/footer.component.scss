@@ -57,13 +57,16 @@
         }
     }
     
+    @media screen and (max-width:768px) {
+        .after::after {
+            display: none;
+        }
+    }
+    
     @media screen and (max-width:600px) {
         .nav-link {
             font-size: 7px;
         }
-    }
-    
-    @media screen and (max-width:350px) {
         .after::after {
             display: none;
         }
