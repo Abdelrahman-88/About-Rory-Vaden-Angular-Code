@@ -11,9 +11,13 @@ $red :#BF3427;
 body {
     font-family: $font;
     color: $dark;
-    overflow-x: hidden;
 }
 
 :root {
     scroll-behavior: unset;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }

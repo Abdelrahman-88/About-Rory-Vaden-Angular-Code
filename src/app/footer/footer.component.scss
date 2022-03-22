@@ -62,3 +62,9 @@
             font-size: 7px;
         }
     }
+    
+    @media screen and (max-width:350px) {
+        .after::after {
+            display: none;
+        }
+    }
